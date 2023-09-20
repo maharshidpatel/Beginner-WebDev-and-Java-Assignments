@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Author: Maharshi patel, 000738366, Date: March 04, 2023
+    Purpose: This webpage is created to practice JavaScript to respond to events and to read inputs and write outputs from/to the DOM. -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 3</title>
+
+    <script src="assignment3_js.js"></script>
+
+    <link rel="stylesheet" href="assignment3_css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="card container-fluid">
+        <div class="row">
+            <div class="col-8 text-center row align-items-center">
+                <h1 class="card-title">Assignment 3</h1>
+            </div>
+
+            <div class="card-body col-4 text-center">
+                <h2 class="card-text">Maharshi Patel</h2>
+                <h2 class="card-text">000738366</h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="container px-0">
+        <div class="row d-flex flex-wrap w-100 mx-0 text-center">
+            <div class="col-lg-4 col-xs-12 px-4 h-100 spin">
+                <img class="img-fluid mt-2" src="" alt="Image Gallery" id="image1">
+            </div>
+            <div class="col-lg-4 col-xs-12 px-4 h-100 spin">
+                <img class="img-fluid mt-2" src="" alt="Image Gallery" id="image2">
+            </div>
+            <div class="col-lg-4 col-xs-12 px-4 h-100 spin">
+                <img class="img-fluid mt-2" src="" alt="Image Gallery" id="image3">
+            </div>
+        </div>
+
+        <div class="row py-5">
+            <div class="col-lg-4 col-xs-12 text-center">
+                <label for="timeout" class="fs-5">Timeout (500-10000ms)</label>
+                <input class="form-control my-2 text-center fs-5" id="timeout" name="timeout" type="number"
+                    onchange="changeTime()">
+            </div>
+
+            <div class="col-lg-4 col-xs-12 text-center">
+                <div class="fs-5">Time until automatic refresh: </div>
+                <div id="timeDisplay" class="my-2 text-center fs-4">
+                </div>
+                <div><button type="button" class="btn btn-primary" id="randomBtn">Randomize!</button></div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-xs-12 text-center fs-5" id="imageCount">
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid" id="contact">
+
+        <p class="text-center p-0 m-0">Maharshi Patel <a
+                href="mailto:maharshi.patel@mohawkcollege.ca">maharshi.patel@mohawkcollege.ca</a></p>
+        <p class="text-center p-0 m-0">Mobile: <a href="tel:9055551234">(905) 555-1234</a></p>
+        <p class="text-center p-0 m-0">&copy; 2023, Maharshi Patel, Mohawk College</p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Author: Maharshi patel, 000738366
+        Purpose: This webpage is created to practice Bootstrap’s JavaScript components and writing solutions to
+        problems using JavaScript from scratch. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+
+    <script src="assignment2_js.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="card container-fluid">
+        <div class="row">
+            <div class="col-8 text-center row align-items-center bg-danger">
+                <h1 class="card-title">Assignment 2</h1>
+            </div>
+
+            <div class="card-body col-4 bg-warning text-center">
+                <h2 class="card-text">Maharshi Patel</h2>
+                <h2 class="card-text">000738366</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="accordion accordion-flush" id="accordionmain">
+            <!-- Group 1 Choice 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed text-bg-info fs-4 fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                        aria-controls="collapse1">
+                        Group 1 Choice 1
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                    data-bs-parent="#accordionmain">
+                    <div class="accordion-body text-bg-success fs-5 fw-semibold">
+                        <div>
+                            <p>Read the input from the document, if the input is numeric and if the input is 0, or if
+                                it’s between
+                                13 and 17 inclusive, output “In range” otherwise output “Out of range”. If it’s not a
+                                number
+                                output “Not a number”.</p>
+                            <label for="q1_input">Enter a number:</label>
+                        </div>
+
+                        <input class="form-control text-bg-dark fs-5 fw-semibold" onchange="group_1_choice_1()"
+                            id="q1_input" name="q1_input" type="text">
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q1_output" id="q1_output"
+                            readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 1 Choice 3 -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed text-bg-primary fs-4 fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                        aria-controls="collapse2">
+                        Group 1 Choice 3
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                    data-bs-parent="#accordionmain">
+                    <div class="accordion-body text-bg-success fs-5 fw-semibold">
+                        <div>
+                            <p>Read the input from the document and interpret it as the length of the side of a square
+                                if it is
+                                numeric and greater than or equal to 0. Output the perimeter (4*side) and area
+                                (side*side) of
+                                the square. If it is not a number output “Can not calculate”.</p>
+                            <label for="q2_input">Enter the length of the side of a square:</label>
+                        </div>
+
+                        <input onchange="group_1_choice_3()" class="form-control text-bg-dark fs-5 fw-semibold"
+                            id="q2_input" name="q2_output" type="text">
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q2_output1" id="q2_output1"
+                            readonly></textarea>
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q2_output2" id="q2_output2"
+                            readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2 Choice 2 -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed text-bg-info fs-4 fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                        aria-controls="collapse3">
+                        Group 2 Choice 2
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                    data-bs-parent="#accordionmain">
+                    <div class="accordion-body text-bg-success fs-5 fw-semibold">
+                        <div>
+                            <p>Read the input from the document. If it is an integer, split the absolute value of the
+                                integer
+                                apart and add up all the digits. If the resulting sum is greater than 9, repeat this
+                                process until the
+                                result is a single digit. Output the result of the calculation. If the original input
+                                was not an
+                                integer output “Bad input.”</p>
+                            <label for="q3_input">Enter a integer:</label>
+                        </div>
+
+                        <input onchange="group_2_choice_2()" class="form-control text-bg-dark fs-5 fw-semibold"
+                            id="q3_input" name="q3_input" type="text">
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q3_output" id="q3_output"
+                            readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2 Choice 3 -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed text-bg-primary fs-4 fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                        aria-controls="collapse4">
+                        Group 2 Choice 3
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                    data-bs-parent="#accordionmain">
+                    <div class="accordion-body text-bg-success fs-5 fw-semibold">
+                        <div>
+                            <p>Read the input from the document. If it is a positive integer, output the factorial of
+                                the input
+                                value. Otherwise, output “Cannot compute factorial value”. The factorial function is
+                                defined as
+                                multiply all the numbers from 1 to the value together. For example, the factorial of 5
+                                is
+                                5*4*3*2*1 = 120. Only compute this value using a loop, no other formulations are
+                                allowed.</p>
+                            <label for="q4_input">Enter a positive integer to calculate its factorial value:</label>
+                        </div>
+
+                        <input onchange="group_2_choice_3()" class="form-control text-bg-dark fs-5 fw-semibold"
+                            id="q4_input" name="q4_input" type="text">
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q4_output" id="q4_output"
+                            readonly></textarea>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3 Choice 1 -->
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed text-bg-info fs-4 fw-semibold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                        aria-controls="collapse5">
+                        Group 3 Choice 1
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                    data-bs-parent="#accordionmain">
+                    <div class="accordion-body text-bg-success fs-5 fw-semibold">
+                        <div>
+                            <p>Read the input from the document. This string must be between 10 and 20 characters long,
+                                inclusive, and consist of only 0’s and 1’s. If the string does not meet these
+                                conditions, output the
+                                result 0. If the input is valid then interpret it as a binary number. Using only loops
+                                and substring
+                                operations calculate the integer value of the binary number. </p>
+                            <label for="q5_input">Enter a binary number:</label>
+                        </div>
+
+                        <input onchange="group_3_choice_1()" class="form-control text-bg-dark fs-5 fw-semibold"
+                            id="q5_input" name="q5_input" type="text">
+                        <textarea class="form-control text-bg-dark fs-5 fw-semibold" name="q5_output" id="q5_output"
+                            readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

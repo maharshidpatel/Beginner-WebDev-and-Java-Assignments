@@ -1,0 +1,34 @@
+* {
+    font-family: cursive;
+}
+
+@keyframes background {
+    0% {background-color:rgb(223, 87, 87); color:darkblue; font-size: 3em; font-weight: 100;}
+    20% {background-color:rgb(235, 235, 52); color: darkmagenta; font-size: 2.5em; font-weight: 250;}
+    40% {background-color:rgb(137, 137, 202); color:white; font-size: 3em; font-weight: 400;}
+    60% {background-color:orange; color:maroon; font-size: 2.5em; font-weight: 550;}
+    80% {background-color:rgb(56, 213, 56); color: black; font-size: 3rem; font-weight: 700;}
+    100% {background-color:rgb(0, 195, 255); color:darkolivegreen; font-size: 2.5em; font-weight: 900;}
+}
+
+header {
+    color: black;
+    animation-direction: alternate;
+    animation-name: background;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+
+ @keyframes link{
+     from {background-color: red;}
+    to {background-color: yellowgreen;}
+    }
+
+nav a:hover {
+    animation-direction: alternate;
+    animation-name: link;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size: 1.75em;
+}

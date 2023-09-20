@@ -1,0 +1,33 @@
+/* Author: Maharshi patel, 000738366, Date: March 23, 2023
+   Purpose: This CSS file styles the Block Dodger game */
+   
+/* Animation for the cube (player) when hovered */
+@keyframes cube{
+    from {fill: greenyellow;}
+   to {fill: yellow;}
+   }
+
+svg #cube:hover {
+   animation-direction: alternate;
+   animation-name: cube;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   font-size: 1.75em;
+}
+
+/* Animation for the game background (sky) */
+@keyframes sky {
+    0% {fill:rgb(223, 87, 87);}
+    20% {fill:rgb(235, 235, 52);}
+    40% {fill:rgb(137, 137, 202);}
+    60% {fill:orange;}
+    80% {fill:rgb(56, 213, 56);}
+    100% {fill:rgb(0, 195, 255);}
+}
+
+#sky {
+    animation-direction: alternate;
+    animation-name: sky;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}

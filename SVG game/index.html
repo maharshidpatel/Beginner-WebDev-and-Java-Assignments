@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Maharshi patel, 000738366, Date: March 23, 2023
+    Purpose: This webpage is designed to provide a Block Dodger game to the user. The game is built using SVG elements, allowing for an interactive and visually appealing experience. -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 4</title>
+
+    <script src="assignment4_js.js" defer></script>
+
+    <link rel="stylesheet" href="assignment4_css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="card container-fluid">
+        <div class="row">
+            <div class="col-8 text-center row align-items-center">
+                <h1 class="card-title">Assignment 4</h1>
+                <h2 class="card-title">Block Dodger</h2>
+            </div>
+
+            <div class="card-body col-4 text-center">
+                <h2 class="card-text">Maharshi Patel</h2>
+                <h2 class="card-text">000738366</h2>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid mt-2 row">
+
+        <div class="col-lg-4 col-xs-12 text-center col align-self-center">
+            <p>Block Dodger is a fast-paced, action-packed game where the player must navigate a small character through a field of obstacles. The objective of the game is to avoid the moving blocks for as long as possible. The blocks come in different sizes, and the player must dodge them by moving up or down using the Mouse. The game ends when the player collides with a block, and their score is based on how long they were able to survive. Block Dodger is easy to play but difficult to master, making it a fun and addictive game for all ages.</p>
+            <p class="fs-4 fw-semibold">left Click to go up</p>
+            <p class="fs-4 fw-semibold">Right Click to go down</p>
+
+        </div>
+        <svg id="canvas" height="500" width="510" class="col-lg-4 col-xs-12">
+            <rect x="25" y="0" height="500" width="510" fill="lightblue" id="sky"></rect>
+            <rect x="85" y="220" height="40" width="40" fill="darkred" id="cube"></rect>
+            <text x="85" y="70" id="score" class="fs-2 fw-semibold"></text>
+        </svg>
+
+        <div class="col-lg-4 col-xs-12 text-center col align-self-center">
+            <div class="fs-3 fw-semibold my-2">High Score: <span id="highscore" class="my-2 text-center fs-2 fw-semibold"></span></div>
+            <div><button type="button" class="btn btn-success fs-2 fw-semibold my-2" id="startbtn">Play Game</button></div>
+            <div><button type="button" class="btn btn-danger fs-2 fw-semibold my-2" id="startbtn2">Play Fast mode</button></div>
+        </div>
+        
+    </main>
+
+    <hr>
+
+    <footer class="container-fluid" id="contact">
+
+        <p class="text-center p-0 m-0">Maharshi Patel <a
+                href="mailto:maharshi.patel@mohawkcollege.ca">maharshi.patel@mohawkcollege.ca</a></p>
+        <p class="text-center p-0 m-0">Mobile: <a href="tel:9055551234">(905) 555-1234</a></p>
+        <p class="text-center p-0 m-0">&copy; 2023, Maharshi Patel, Mohawk College</p>
+
+    </footer>
+</body>
+</html>

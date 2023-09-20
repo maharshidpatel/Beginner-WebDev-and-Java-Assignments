@@ -1,0 +1,6 @@
+/** Author: Maharshi patel, 000738366, Date: March 04, 2023
+    Purpose: This CSS code creates transition and transform animation for images of spin class*/
+.spin {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}

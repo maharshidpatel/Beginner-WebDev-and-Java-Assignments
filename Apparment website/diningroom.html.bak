@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Author: Maharshi Patel, 000738366 -->
+		
+		<title>Dining Room</title>
+		
+		<link rel="stylesheet" href="apartment_layout.css" type="text/css">
+		
+		<style>
+		</style>
+		
+		
+	</head>
+	<body>
+	
+		<header>
+			<h1>Sandy and Leslie's Apartment</h1>
+			<img src="images/apartmentfloorplan.jpg" alt="Apartment Map" usemap="#apartmentmap">
+			<map name="apartmentmap">
+			
+				<area shape="rect" coords="48,108,179,269" href="bedroom.html" alt="bedroom" title="Bedroom 1">
+				
+				<area shape="poly" coords="391,109,552,107,575,308,499,310,487,241,396,235" href="bedroom.html" alt="bedroom" title="Bedroom 2">
+				
+				<area shape="rect" coords="196,108,344,266" href="livingroom.html" alt="livingroom" title="Living Room">
+				
+				<area shape="rect" coords="188,288,293,390" href="kitchen.html" alt="kitchen" title="Kitchen">
+				
+				<area shape="circle" coords="345,341,36" href="diningroom.html" alt="diningroom" title="Dining Room">
+			
+			</map>
+			
+		</header>
+			
+		<nav>
+			<ul>
+				<li><a href="apartment.html">Apartment</a> | </li>
+				<li><a href="bedroom.html">Bedroom 1</a> | </li>
+				<li><a href="bedroom.html">Bedroom 2</a> | </li>
+				<li><a href="diningroom.html">Diningroom</a> | </li>
+				<li><a href="livingroom.html">Livingroom</a> | </li>
+				<li><a href="kitchen.html">Kitchen</a></li>
+			</ul>
+		</nav>
+		
+		<h2 class="image_heading">Dining Room Details</h2>
+		<img src="images/diningroom_lg.jpg" alt="Diningroom" class="lg_image">
+		
+		<h2>Apartment services:</h2>
+				
+		<table>
+				
+			<thead>
+				<tr>
+					<th>Service</th>
+					<th>Days/Hours</th>
+				</tr>
+			</thead>
+					
+			<tbody>
+					
+				<tr>
+					<td class="padding1">Gym</td>
+					<td rowspan="2" class="padding2">Monday-Friday 6am - 10pm<br>Saturday 8am - 8pm<br>Sunday8am - 5pm</td>
+				</tr>
+						
+				<tr>
+					<td class="padding1">Pool</td>
+				</tr>
+						
+				<tr>
+					<td>Laundry</td>
+					<td>24/7</td>
+				</tr>
+						
+				<tr>
+					<td colspan="2" id="color">Please do not allow people you do not know to use these facilities.</td>
+				</tr>
+						
+			</tbody>
+				
+		</table>
+		
+		<footer>
+			
+			<p>For more information contact: <a href="mailto:apartment@example.com">SandyAndLeslie@example.com</a> or <a href="tel:9055551234">(905)555-1234</a></p>
+		
+			<p>&copy; Sandy and Leslie 2022</p>
+		
+		</footer>
+	</body>
+</html>

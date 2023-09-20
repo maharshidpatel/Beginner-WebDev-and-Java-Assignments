@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+	header img, header p, span {
+		display: none;
+	}
+	
+	nav li{
+		display: block;
+	}
+	
+	#apartmentgrid {
+		display: none;
+		grid-template-columns: auto;
+	}
+	
+	#column1 {
+		grid-row: 1;
+	}
+	
+	#table {
+		grid-row: 1;
+	}
+	
+	#location {
+		grid-row: 1;
+	}
+} 

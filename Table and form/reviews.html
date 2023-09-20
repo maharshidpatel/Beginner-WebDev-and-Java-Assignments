@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Author: Maharshi Patel, 000738366 -->
+		
+		<title> Outdoor Adventure Reviews</title>
+		
+		<link rel="stylesheet" href="adventuretyles.css" type="text/css">
+		
+		<link rel="stylesheet" href="mobile.css" type="text/css">
+		
+		<link rel="stylesheet" href="printstyles.css" type="text/css" media="print">
+		
+		<style>
+			body {
+				font-family:  Helvetica, sans-serif, Verdana, Arial;
+			}
+			
+			form {
+				background-color: #6f2da8;
+				color: white;
+				margin: 0 10%;
+				border: 3px solid black;
+				padding: 15px;
+			}
+			
+			.aboutyou {
+				margin-top: 15px;
+			}
+			
+			.aboutyou input{
+				background-color: Orchid;
+			}
+			
+			.aboutyou label{
+				display: inline-block;
+				text-align: right;
+				width: 120px;
+				margin-right: 10px;
+			}
+			
+			fieldset {
+				border: 3px solid white;
+				margin-bottom: 15px;
+				padding-left: 7px;
+			}
+			
+			legend {
+				padding: 0 10px;
+			}
+			
+			#rating {
+				margin-bottom: 0;
+			}
+			
+			.button input{
+				background-color: Orchid;
+				color: black;
+				font-weight: bold;
+				border: 1px solid grey;
+				padding: 3px;
+			}
+			
+			#centerimg {
+				text-align: center;
+			}
+			
+		</style>
+	
+	</head>
+	<body>
+		
+		<h1>Outdoor Adventure Trip Reviews</h1>
+		<h1>2022/2023</h1>
+		
+		<nav>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">travel</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="seminars.html">Seminars</a></li>
+				<li><a href="#">Events</a></li>
+			</ul>
+		</nav>
+		
+		<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+			<input type="hidden" name="formname" value="Maharshi Patel Trip Review">
+			<fieldset>
+				<legend>About You (optional)</legend>
+				<div>
+					<label>I usually prefer to trips this time of the year (select all that apply):</label>
+				</div>
+				<div>
+					<select name="pref" size="4" multiple>
+						<option value="Winter">Winter</option>
+						<option value="Spring">Spring</option>
+						<option value="Summer">Summer</option>
+						<option value="Fall">Fall</option>
+					</select>
+				</div>
+				<div class="aboutyou">
+					<div>
+						<label>First Name</label>
+						<input type="text" name="firstname" maxlength="20">
+					</div>
+					<div>
+						<label>Last Name</label>
+						<input type="text" name="lastname" maxlength="20">
+					</div>
+					<div>
+						<label>Phone Number</label>
+						<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" maxlength="12" size="12">
+					</div>
+					<div>
+						<label>Email Address</label>
+						<input type="email" name="emailaddress" placeholder="name@example.com" maxlength="40" size="40">
+					</div>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Trip Reviews</legend>
+				<div>
+					<select name="trip">
+						<option value="Alberta Rural">Alberta Rural</option>
+						<option value="B.C. Coast" selected>B.C. Coast</option>
+						<option value="Ontario Lake Superior">Ontario Lake Superior</option>
+						<option value="PEI">PEI</option>
+						<option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+					</select>
+					<select name="duration">
+						<option value="5d">5 Days</option>
+						<option value="7d">7 Days</option>
+						<option value="10d">10 Days</option>
+						<option value="14d">14 Days</option>
+					</select>
+				</div>
+				
+				<p id="rating">Your rating:</p>
+				
+				<div>
+					<input type="radio" name="rating" id="r4" value="4" checked>
+					
+					<label for="r4"><img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"></label>
+				</div>
+				
+				<div>
+					<input type="radio" name="rating" id="r3" value="3">
+					<label for="r3"><img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"></label>
+				</div>
+				
+				<div>
+					<input type="radio" name="rating" id="r2" value="2">
+					<label for="r2"><img src="images/wheel_sm.jpg" alt="Rating Wheel"> <img src="images/wheel_sm.jpg" alt="Rating Wheel"></label>
+				</div>
+				
+				<div>
+					<input type="radio" name="rating" id="r1" value="1">
+					<label for="r1"><img src="images/wheel_sm.jpg" alt="Rating Wheel"></label>
+				</div>
+				
+				<div><label>Comments</label></div>
+				<div>
+					<textarea name="comments" cols="65" rows="7"></textarea>
+				</div>
+				
+			</fieldset>
+			
+			<fieldset>
+			
+				<legend>I would be interested in these trips: (check all that apply)</legend>
+				<div>
+					<input type="checkbox" name="interested" id="sea_or_lake" value="coast">
+					<label for="sea_or_lake">Sea or Lake Coast</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="interested" id="rural" value="rural">
+					<label for="rural">Rural</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="interested" id="mountains" value="mountains" checked>
+					<label for="mountains">Mountains</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="interested" id="other" value="other">
+					<label for="other">Other (please specify)</label>
+					<input type="text" name="otherdestination">
+				</div>
+			
+			</fieldset>
+			
+			<div class="button">
+				<input type="submit" value="SEND REVIEW">
+				<input type="reset" value="CANCEL">
+			</div>
+		
+		</form>
+			
+		<p id="centerimg"><img src="images/Capture.PNG" alt="Maharshi Patel Trip Review"></p>
+			
+		<footer>
+			<img src="images/outdooradventurehorizontal.png" alt="Outdoor Adventure">
+		</footer>
+			
+			
+		
+	</body>
+	
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Author: Maharshi Patel, 000738366 -->
+		
+		<title>Sandy and Leslie's apartment</title>
+		
+		<link rel="stylesheet" href="printstyles.css" type="text/css" media="print">
+		
+		<link rel="stylesheet" href="apartment_layout.css" type="text/css">
+		
+		<link rel="stylesheet" href="mobile.css" type="text/css">
+		
+		<style>
+			header p {
+				text-align: center;
+			}
+			
+			#apartmentgrid {
+				display: grid;
+				grid-template-columns: 1.3fr 1fr 0.6fr;
+				column-gap: 15px;
+			}
+			
+			#column1 {
+				grid-column: 1;	
+			}
+			
+			#table {
+				grid-column: 2;
+			}
+			
+			#location {
+				grid-column: 3;
+			}
+			
+			#audio {
+				margin-bottom: 75px;
+			}
+			
+			#location img {
+				height: 450px;
+				width: 306px;
+			}
+			
+			#gallery {
+				display: flex;
+				flex-wrap: wrap;
+				column-gap: 40px;
+			}
+			
+			footer {
+				text-align: center;
+			}
+			
+			h3 {
+				background-color: #FF6600;
+				color: white;
+				padding: 6px;
+			}
+			
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	<body>
+	
+		<header>
+		
+			<h1>Sandy and Leslie's Apartment</h1>
+		
+			<p>click a room for detailed view.</p>
+		
+			<img src="images/apartmentfloorplan.jpg" alt="Apartment Map" usemap="#apartmentmap">
+			<map name="apartmentmap">
+		
+				<area shape="rect" coords="48,108,179,269" href="bedroom.html" alt="bedroom" title="Bedroom 1">
+			
+				<area shape="poly" coords="391,109,552,107,575,308,499,310,487,241,396,235" href="bedroom.html" alt="bedroom" title="Bedroom 2">
+			
+				<area shape="rect" coords="196,108,344,266" href="livingroom.html" alt="livingroom" title="Living Room">
+			
+				<area shape="rect" coords="188,288,293,390" href="kitchen.html" alt="kitchen" title="Kitchen">
+			
+				<area shape="circle" coords="345,341,36" href="diningroom.html" alt="diningroom" title="Dining Room">
+		
+			</map>
+			
+		</header>
+			
+		<nav>
+			<ul>
+				<li><a href="apartment.html">Apartment</a> | </li>
+				<li><a href="bedroom.html">Bedroom 1</a> | </li>
+				<li><a href="bedroom.html">Bedroom 2</a> | </li>
+				<li><a href="diningroom.html">Diningroom</a> | </li>
+				<li><a href="livingroom.html">Livingroom</a> | </li>
+				<li><a href="kitchen.html">Kitchen</a></li>
+			</ul>
+		</nav>
+		
+		<div id="apartmentgrid">
+		
+			<div id="columan1">
+			
+				<div id="audio">
+					<h2>Welcome Message</h2>
+					<audio src="media/apartment.mp3" controls>Your browser is not compliant</audio>
+					<p>Hello. Welcome to our apartment. You’ll really enjoy living here. The rooms are spacious and the
+					apartment building amenities are fantastic. We look forward to hearing from you!</p>
+				</div>
+				
+				<div id="form">
+					<h2>Survey</h2>
+					
+					<p>How did you find out about this apartment? Check any that apply:</p>
+					
+					<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+						
+						<input type="hidden" name="formname" value="Survey Information">
+						
+						<input type="checkbox" name="Resourses" value="web search" id="web_search">
+						<label for="web_search">Web search</label>
+						<input type="checkbox" name="Resourses" value="friend" id="friend">
+						<label for="friend">Friend</label>
+						<input type="checkbox" name="Resourses" value="newspaper" id="newspaper">
+						<label for="newspaper">Newspaper</label>
+						
+						<p>
+							<input type="submit" class="button" value="Submit">
+							<input type="reset" class="button" value="Reset Form">
+						</p>
+						
+					</form>
+						
+					
+				</div>
+				
+			</div>
+			
+			<div id="table">
+				<h2>Apartment services:</h2>
+				
+				<table>
+				
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Days/Hours</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+					
+						<tr>
+							<td class="padding1">Gym</td>
+							<td rowspan="2" class="padding2">Monday-Friday 6am - 10pm<br>Saturday 8am - 8pm<br>Sunday8am - 5pm</td>
+						</tr>
+						
+						<tr>
+							<td class="padding1">Pool</td>
+						</tr>
+						
+						<tr>
+							<td>Laundry</td>
+							<td>24/7</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" class="tablecolor">Please do not allow people you do not know to use these facilities.</td>
+						</tr>
+						
+					</tbody>
+				
+				</table>
+				
+			</div>
+			
+			<div id="location">
+				<h2>Location</h2>
+				<img src="images/location.png" alt="Apartment location">
+			</div>
+			
+		</div>
+		
+		<h2>Gallery</h2>
+		
+		<div id="gallery">
+			<div>
+				<h3>Balcony</h3>
+				<img src="images/gallery_images/balcony_sm.jpg" alt="Balcony">
+			</div>
+			
+			<div>
+				<h3>Bathroom</h3>
+				<img src="images/gallery_images/bathroom_sm.jpg" alt="Bathroom">
+			</div>
+			
+			<div>
+				<h3>Bedroom</h3>
+				<img src="images/gallery_images/bedroom_sm.jpg" alt="Bedroom">
+			</div>
+			
+			<div>
+				<h3>Dining Room</h3>
+				<img src="images/gallery_images/diningroom_sm.jpg" alt="Dining Room">
+			</div>
+			
+			<div>
+				<h3>Kitchen</h3>
+				<img src="images/gallery_images/kitchen_sm.jpg" alt="Kitchen">
+			</div>
+			
+			<div>
+				<h3>Living Room</h3>
+				<img src="images/gallery_images/livingroom_sm.jpg" alt="Living Room">
+			</div>
+			
+		</div>
+		
+		<footer>
+			
+			<p>For more information contact: <a href="mailto:apartment@example.com">SandyAndLeslie@example.com</a> or <a href="tel:9055551234">(905)555-1234</a></p>
+		
+			<p>&copy; Sandy and Leslie 2022</p>
+		
+		</footer>
+		
+	</body>
+</html>

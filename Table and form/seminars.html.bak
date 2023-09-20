@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Author: Maharshi Patel, 000738366 -->
+		
+		<title> Outdoor Adventure Seminars</title>
+		
+		<link rel="stylesheet" href="adventuretyles.css" type="text/css">
+		
+		<link rel="stylesheet" href="mobile.css" type="text/css">
+		
+		<link rel="stylesheet" href="printstyles.css" type="text/css" media="print">
+		
+		<style>
+		
+			body {
+				font-family:  Helvetica, sans-serif, Verdana, Arial;
+			}
+			
+			#tablemain, #tablemain th, #tablemain td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			
+			#table1 caption {
+				text-align: left;
+			}
+			
+			#tablemain caption {
+				caption-side: bottom;
+				text-align: right;				
+			}
+			
+			#table1 {
+				margin-bottom: 10px;
+				margin-left: 10%; 
+				margin-right: 10%;
+			}
+			
+			#tablemain {
+				margin-left: 10%; 
+				margin-right: 10%;
+				width: 80%;
+			}
+			
+			.color1 {
+				background-color: orchid;
+			}
+			
+			.color2 {
+				background-color: cyan;
+			}
+			
+			.color3 {
+				background-color: #FFFACD;
+			}
+			
+			.color4 {
+				background-color: #F4AF60;
+			}
+			
+			thead {
+				background-color: #002759;
+			}
+			
+			thead th {
+				color: white;
+				height: 50px;
+			}
+			
+			#tablemain tbody td {
+				height: 40px;
+			}
+			
+			#tablemain tbody td {
+				padding-left: 5px;
+			}
+			
+			table#tablemain col.firstcol {
+				background-color: #DDEEFF;
+				width: 6.5%
+			}
+			
+			table#tablemain col.timecol {
+				width: 10.5%;
+			}
+			
+			.picback {
+				background-image: url(images/dust.jpg);
+				text-align: center;
+				font-weight: bold;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h1>Outdoor Adventure Seminars</h1>
+		<h1>2022/2023</h1>
+		
+		<nav>
+			<ul>
+				<li id="n1"><a href="#">About Us</a></li>
+				<li id="n2"><a href="#">travel</a></li>
+				<li id="n3"><a href="#">Photos</a></li>
+				<li id="n4"><a href="#">Shop</a></li>
+				<li id="n5"><a href="reviews.html">Reviews</a></li>
+				<li id="n6"><a href="seminars.html">Seminars</a></li>
+				<li id="n7"><a href="#">Events</a></li>
+			</ul>
+		</nav>
+		
+		<table id="table1">
+			<caption>Legend:</caption>
+			<tr>
+				<td class="color1">&nbsp;&nbsp;</td>
+				<td>Beginner Cycling</td>
+				<td class="color2">&nbsp;&nbsp;</td>
+				<td>Long Distance Cycling</td>
+				<td class="color3">&nbsp;&nbsp;</td>
+				<td>Hiking</td>
+				<td class="color4">&nbsp;&nbsp;</td>
+				<td>Camping</td>
+			</tr>
+			
+		</table>
+		
+		<table id="tablemain">
+			<caption>Schedule is subject to change</caption>
+			
+			<colgroup>
+               <col class="firstcol" span="1">
+			   <col class="timecol" span="7">
+			<colgroup>
+			
+			<thead>
+				<tr>
+					<th>Day</th>
+					<th>7 am - 9 am</th>
+					<th>9 am - 11 am</th>
+					<th>11 am - 12 pm</th>
+					<th>12 pm - 2 pm</th>
+					<th>2 pm - 4 pm</th>
+					<th>6 pm - 8 pm</th>
+					<th>8 pm - 10 pm</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>Monday</th>
+					<td class="color1">Beginner Cycling</td>
+					<td class="color3">Hiking</td>
+					<td colspan="5" class="color4">Camping</td>
+				</tr>
+				
+				<tr>
+					<th>Tuesday</th>
+					<td colspan="7" class="picback">Reserved for groups</td>
+				</tr>
+				
+				<tr>
+					<th>Wednesday</th>
+					<td rowspan="2" class="color2">Long Distance Cycling Part 1</td>
+					<td></td>
+					<td class="color1">Beginner Cycling</td>
+					<td rowspan="2" class="color4">Camping in Asia</td>
+					<td rowspan="2" class="color2">Long Distance Cycling Part 2</td>
+					<td colspan="2" rowspan="3" class="color3">Hiking</td>
+				</tr>
+				
+				<tr>
+					<th>Thursday</th>
+					<td class="color4">Camping</td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<th>Friday</th>
+					<td rowspan="4" class="color4">Camping in Europe</td>
+					<td colspan="2" class="color1">Beginner Cycling</td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<th>Saturday</th>
+					<td colspan="3" rowspan="2" class="color3">Hiking</td>
+					<td class="color1">Beginner Cycling</td>
+					<td colspan="2" rowspan="2" class="color2">Long Distance Cycling Part 1 and 2</td>
+				</tr>
+				
+				<tr>
+					<th>Sunday</th>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<th>Holidays</th>
+					<td colspan="2" class="color2">Long Distance Cycling</td>
+					<td colspan="4" class="picback">No Seminars</td>
+				</tr>
+			</tbody>
+			
+		</table>
+		
+		<footer>
+			<img src="images/outdooradventurehorizontal.png" alt="Outdoor Adventure">
+		</footer>
+	
+	</body>
+
+</html>

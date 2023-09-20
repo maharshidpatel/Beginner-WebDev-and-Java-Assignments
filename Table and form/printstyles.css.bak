@@ -1,0 +1,40 @@
+* {
+	padding: 0 !important;
+	margin: 0 !important;
+	background-color: white !important;
+	color: black !important;
+	font-size: 12pt;
+}
+
+td.picback {
+	font-weight: initial;
+	text-align: initial;
+}
+
+#tablemain, #tablemain th, #tablemain td, form{
+	border: none !important;
+}
+
+#table1 caption, #tablemain caption {
+	text-align: center !important;
+}
+
+#tablemain caption {
+	caption-side: initial !important;
+}
+
+nav, footer {
+	visibility: hidden;
+}
+
+.button input {
+	font-weight: initial !important;
+}
+
+.aboutyou label{
+	display: inline !important;
+	text-align: initial !important;
+}
+
+
+
